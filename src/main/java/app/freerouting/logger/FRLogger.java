@@ -71,36 +71,36 @@ public class FRLogger {
   }
 
   public static void info(String msg) {
-    logEntries.add(LogEntryType.Info, msg);
-
     if (!enabled) return;
+
+    logEntries.add(LogEntryType.Info, msg);
     if (logger == null) logger = LogManager.getLogger(Freerouting.class);
 
     logger.info(msg);
   }
 
   public static void warn(String msg) {
-    logEntries.add(LogEntryType.Warning, msg);
-
     if (!enabled) return;
+
+    logEntries.add(LogEntryType.Warning, msg);
     if (logger == null) logger = LogManager.getLogger(Freerouting.class);
 
     logger.warn(msg);
   }
 
   public static void debug(String msg) {
-    logEntries.add(LogEntryType.Debug, msg);
-
     if (!enabled) return;
+
+    logEntries.add(LogEntryType.Debug, msg);
     if (logger == null) logger = LogManager.getLogger(Freerouting.class);
 
     logger.debug(msg);
   }
 
   public static void error(String msg, Throwable t) {
-    logEntries.add(LogEntryType.Error, msg);
-
     if (!enabled) return;
+
+    logEntries.add(LogEntryType.Error, msg);
     if (logger == null) logger = LogManager.getLogger(Freerouting.class);
 
 
@@ -112,9 +112,9 @@ public class FRLogger {
   }
 
   public static void trace(String msg) {
-    logEntries.add(LogEntryType.Trace, msg);
-
     if (!enabled) return;
+
+    logEntries.add(LogEntryType.Trace, msg);
     if (logger == null) logger = LogManager.getLogger(Freerouting.class);
 
     logger.trace(msg);
